@@ -12,3 +12,4 @@ D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\refint\OOP-NguyenDinhCong.dll
 D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.pdb
 D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.genruntimeconfig.cache
 D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\ref\OOP-NguyenDinhCong.dll
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.sourcelink.json
