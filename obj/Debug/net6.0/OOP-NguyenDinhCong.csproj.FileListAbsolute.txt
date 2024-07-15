@@ -1,0 +1,14 @@
+D:\congIT\C#\OOP-NguyenDinhCong\bin\Debug\net6.0\OOP-NguyenDinhCong.exe
+D:\congIT\C#\OOP-NguyenDinhCong\bin\Debug\net6.0\OOP-NguyenDinhCong.deps.json
+D:\congIT\C#\OOP-NguyenDinhCong\bin\Debug\net6.0\OOP-NguyenDinhCong.runtimeconfig.json
+D:\congIT\C#\OOP-NguyenDinhCong\bin\Debug\net6.0\OOP-NguyenDinhCong.dll
+D:\congIT\C#\OOP-NguyenDinhCong\bin\Debug\net6.0\OOP-NguyenDinhCong.pdb
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.GeneratedMSBuildEditorConfig.editorconfig
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.AssemblyInfoInputs.cache
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.AssemblyInfo.cs
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.csproj.CoreCompileInputs.cache
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.dll
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\refint\OOP-NguyenDinhCong.dll
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.pdb
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\OOP-NguyenDinhCong.genruntimeconfig.cache
+D:\congIT\C#\OOP-NguyenDinhCong\obj\Debug\net6.0\ref\OOP-NguyenDinhCong.dll
