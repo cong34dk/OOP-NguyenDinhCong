@@ -1,6 +1,6 @@
-﻿using OOP_NguyenDinhCong.DAO;
+﻿using System;
 using OOP_NguyenDinhCong.Entity;
-using System;
+using OOP_NguyenDinhCong.DAO;
 
 namespace OOP_NguyenDinhCong
 {
@@ -8,52 +8,42 @@ namespace OOP_NguyenDinhCong
     {
         static void Main(string[] args)
         {
-            Database db = Database.Instance;
+            // Khởi tạo các đối tượng DAO
+            CategoryDAO categoryDAO = new CategoryDAO();
+            ProductDAO productDAO = new ProductDAO();
+            AccessoryDAO accessoryDAO = new AccessoryDAO();
 
-            // Tạo một sản phẩm mới và thêm vào bảng Product
-            Product product = new Product
-            {
-                Id = 1,
-                Name = "Laptop",
-                CategoryId = 101,
-                Price = 21000000,
-                Stock = 50,
-                Description = "High-performance laptop with 16GB RAM and 512GB SSD."
-            };
-            db.InsertTable("product", product);
+            // Thêm một vài dữ liệu vào Database để kiểm tra
+            Category category1 = new Category(1, "Electronics", "Electronic devices");
+            categoryDAO.Insert(category1);
 
-            // Hiển thị thông tin sản phẩm
-            var products = db.SelectTable("product");
-            foreach (Product p in products)
+            Product product1 = new Product(1, "Laptop", 1, 1500, 10, "High-performance laptop");
+            productDAO.Insert(product1);
+
+            Accessory accessory1 = new Accessory(1, "Mouse", 1, 200, "Peripheral");
+            accessoryDAO.Insert(accessory1);
+
+            // Hiển thị thông tin từ Database
+            Console.WriteLine("Categories:");
+            foreach (var category in categoryDAO.FindAll())
             {
-                p.DisplayProductInfo();
+                category.DisplayInfo();
+                Console.WriteLine();
             }
 
-            // Cập nhật thông tin sản phẩm
-            product.Price = 19900000;
-            db.UpdateTable("product", product);
-
-            // Hiển thị thông tin sản phẩm sau khi cập nhật
-            products = db.SelectTable("product");
-            foreach (Product p in products)
+            Console.WriteLine("\nProducts:");
+            foreach (var product in productDAO.FindAll())
             {
-                p.DisplayProductInfo();
+                product.DisplayInfo();
+                Console.WriteLine();
             }
 
-            // Xóa sản phẩm
-            db.DeleteTable("product", product);
-
-            // Hiển thị thông tin sản phẩm sau khi xóa
-            products = db.SelectTable("product");
-            if (products == null || products.GetEnumerator().MoveNext() == false)
+            Console.WriteLine("\nAccessories:");
+            foreach (var accessory in accessoryDAO.FindAll())
             {
-                Console.WriteLine("No products available.");
+                accessory.DisplayInfo();
+                Console.WriteLine();
             }
-
-            // Xóa toàn bộ bảng Product
-            db.TruncateTable("product");
-
-            Console.ReadLine();
         }
     }
 }

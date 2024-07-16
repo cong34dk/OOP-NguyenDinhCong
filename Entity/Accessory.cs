@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP_NguyenDinhCong.Entity
 {
-    public class Accessory
+    public class Accessory : BaseRow
     {
-        // Các thuộc tính
-        public int Id { get; set; }
-        public string Name { get; set; }
         public int ProductId { get; set; }
         public decimal Price { get; set; }
-        public string Description { get; set; }
 
         // Constructor mặc định
         public Accessory() { }
@@ -28,8 +20,7 @@ namespace OOP_NguyenDinhCong.Entity
             Description = description;
         }
 
-        // Phương thức hiển thị thông tin phụ kiện
-        public void DisplayAccessoryInfo()
+        public override void DisplayInfo()
         {
             Console.WriteLine($"Accessory Id: {Id}");
             Console.WriteLine($"Name: {Name}");

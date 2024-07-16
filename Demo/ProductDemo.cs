@@ -30,7 +30,7 @@ namespace OOP_NguyenDinhCong.Demo
         {
             if (product != null)
             {
-                product.DisplayProductInfo();
+                product.DisplayInfo();
             }
             else
             {

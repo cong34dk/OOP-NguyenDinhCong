@@ -1,18 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOP_NguyenDinhCong.Entity
 {
-    public class Category
+    public class Category : BaseRow
     {
-        // Các thuộc tính
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-
         // Constructor mặc định
         public Category() { }
 
@@ -24,8 +15,7 @@ namespace OOP_NguyenDinhCong.Entity
             Description = description;
         }
 
-        // Phương thức hiển thị thông tin danh mục
-        public void DisplayCategoryInfo()
+        public override void DisplayInfo()
         {
             Console.WriteLine($"Category Id: {Id}");
             Console.WriteLine($"Name: {Name}");
