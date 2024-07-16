@@ -1,8 +1,9 @@
-﻿using System;
+﻿using OOP_NguyenDinhCong.Interface;
+using System;
 
 namespace OOP_NguyenDinhCong.Entity
 {
-    public abstract class BaseRow
+    public abstract class BaseRow : IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

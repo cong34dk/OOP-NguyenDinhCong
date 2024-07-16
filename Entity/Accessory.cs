@@ -1,8 +1,9 @@
-﻿using System;
+﻿using OOP_NguyenDinhCong.Interface;
+using System;
 
 namespace OOP_NguyenDinhCong.Entity
 {
-    public class Accessory : BaseRow
+    public class Accessory : BaseRow, IEntity
     {
         public int ProductId { get; set; }
         public decimal Price { get; set; }

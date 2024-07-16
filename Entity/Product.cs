@@ -1,8 +1,9 @@
-﻿using System;
+﻿using OOP_NguyenDinhCong.Interface;
+using System;
 
 namespace OOP_NguyenDinhCong.Entity
 {
-    public class Product : BaseRow
+    public class Product : BaseRow, IEntity
     {
         public int CategoryId { get; set; }
         public int Price { get; set; }
@@ -29,6 +30,7 @@ namespace OOP_NguyenDinhCong.Entity
             Console.WriteLine($"Price: {Price:C}");
             Console.WriteLine($"Stock: {Stock}");
             Console.WriteLine($"Description: {Description}");
+            Console.WriteLine();
         }
     }
 }

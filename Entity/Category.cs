@@ -1,8 +1,9 @@
-﻿using System;
+﻿using OOP_NguyenDinhCong.Interface;
+using System;
 
 namespace OOP_NguyenDinhCong.Entity
 {
-    public class Category : BaseRow
+    public class Category : BaseRow, IEntity
     {
         // Constructor mặc định
         public Category() { }
