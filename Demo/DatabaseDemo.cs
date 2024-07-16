@@ -64,6 +64,16 @@ namespace OOP_NguyenDinhCong.Demo
 
             Accessory updatedAccessory = new Accessory { Id = 1, Name = "Updated Accessory 1", Description = "Updated Description" };
             database.UpdateTable("accessory", updatedAccessory);
+
+            // Example of updating by id
+            Product updatedProductById = new Product { Id = 1, Name = "Updated Product By Id", Price = 200 };
+            database.UpdateTableById("product", 1, updatedProductById);
+
+            Category updatedCategoryById = new Category { Id = 1, Name = "Updated Category By Id" };
+            database.UpdateTableById("category", 1, updatedCategoryById);
+
+            Accessory updatedAccessoryById = new Accessory { Id = 1, Name = "Updated Accessory By Id", Description = "Updated Description By Id" };
+            database.UpdateTableById("accessory", 1, updatedAccessoryById);
         }
 
         //Phuong thuc DeleteTableTest

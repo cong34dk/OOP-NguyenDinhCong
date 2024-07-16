@@ -99,6 +99,30 @@ namespace OOP_NguyenDinhCong.DAO
             return index;
         }
 
+        //Phuong thuc UpdateTableById
+        public int UpdateTableById(string name, int id, object row)
+        {
+            int index = -1;
+            switch (name.ToLower())
+            {
+                case "product":
+                    index = ProductTable.FindIndex(p => p.Id == id);
+                    if (index != -1) ProductTable[index] = (Product)row;
+                    break;
+                case "category":
+                    index = CategoryTable.FindIndex(c => c.Id == id);
+                    if (index != -1) CategoryTable[index] = (Category)row;
+                    break;
+                case "accessory":
+                    index = AccessoryTable.FindIndex(a => a.Id == id);
+                    if (index != -1) AccessoryTable[index] = (Accessory)row;
+                    break;
+                default:
+                    throw new ArgumentException("Invalid table name");
+            }
+            return index;
+        }
+
         //Phuong thuc DeleteTable
         public bool DeleteTable(string name, object row)
         {
